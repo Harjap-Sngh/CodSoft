@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  padding: 40px;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding-left: 25px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: black;
+  transition: 0.2s;
+}
+
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  height: min-content;
+}
+
+.plants {
+  height: 80vh;
+}
+
+.container1 {
+  background-color: #f0f0f0;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25vw;
+}
+
+.heading {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.container2 {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 50px 100px 50px 100px;
+}
+
+.course-info1,
+.course-info2 {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 25vw;
+  margin-top: 20px;
+}
+
+.img-div {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.info-img {
+  width: 500px;
+}
+
+.infotext {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.container3 {
+  margin-top: 60px;
+  padding: 50px 100px 50px 100px;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.people {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.person {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 300px;
+  min-width: 200px;
+  height: 150px;
+  gap: 10px;
+  box-shadow: rgb(188, 186, 186) 0px 0px 0px 2px inset,
+    rgb(255, 255, 255) 10px -10px 0px -3px, rgb(0, 0, 0) 10px -10px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.persons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.person-info {
+  display: flex;
+  flex-flow: row nowrap;
+  color: gray;
+  gap: 5px;
+}
+
+.person-info-noimg > p {
+  color: black;
+  font-weight: 700;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.social-links {
+  width: 30px;
+}
+
+footer {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 5vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d8d2d2;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  filter: invert(99%) sepia(24%) saturate(0%) hue-rotate(169deg) brightness(90%)
+    contrast(82%);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 3ms;
+}
+
+.quicklinks {
+  display: flex;
+  flex-direction: row;
+}
+.quicklinks1,
+.quicklinks2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footer-social {
+  margin-left: 8px;
+}
