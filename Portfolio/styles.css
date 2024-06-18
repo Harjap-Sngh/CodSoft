@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-color: #2d2e32;
+  --background-color: hsl(0, 0%, 96%);
+  --background-color-profile: #efefef;
+  --backgroun-color-footer: #2d2e32;
+}
+
+body {
+  font-family: poppins;
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--background-color);
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding-left: 25px;
+}
+
+.ul-header {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 25px;
+}
+
+.li-header {
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.container1 {
+  background-color: var(--background-color-profile);
+}
+.profile {
+  height: 100vh;
+  width: 60%;
+  /* padding-bottom: 5%; */
+  margin: auto;
+  display: grid;
+  grid-template-areas: "profile-info profile-pic" "tech-stack tech-stack";
+  place-items: center;
+}
+
+.profile-pic {
+  grid-area: profile-pic;
+  padding: 20px;
+  margin-left: 80px;
+}
+
+.profile-picture {
+  mix-blend-mode: multiply;
+  width: 100%;
+}
+
+.profile-info {
+  grid-area: profile-info;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-links {
+  margin-top: 10px;
+}
+
+.profile-links a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.profile-links img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.1s;
+}
+
+.profile-tech-stack {
+  grid-area: tech-stack;
+  width: 100%;
+  display: inline-flex;
+}
+
+.profile-tech-stack img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.profile-tech-stack img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.1s;
+}
+
+.profile-tech-stack-text {
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: 20%;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 85vh;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-heading {
+  font-size: 50px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0c60c0;
+}
+
+.about-code-img {
+  display: grid;
+}
+
+.about-code-img-html,
+.about-code-img-css,
+.about-code-img-js {
+  position: relative;
+  height: 40%;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.about-code-img-html {
+  left: -50px;
+}
+
+.about-code-img-css {
+  left: 50px;
+  top: 60px;
+}
+
+.about-code-img-js {
+  left: 200px;
+  top: 130px;
+}
+
+.about-text {
+  margin-left: min(100px);
+  margin-top: min(50px);
+}
+
+/* .container3 {
+} */
+
+.projects {
+  height: 30vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color-profile);
+}
+
+.email-icon,
+.insta-icon {
+  width: 50px;
+  filter: invert(34%) sepia(90%) saturate(2508%) hue-rotate(202deg)
+    brightness(103%) contrast(102%);
+}
+
+.contact {
+  padding: 5%;
+}
+
+.contact-h2 {
+  font-family: poppins;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #147efb;
+  margin-bottom: 10px;
+}
+
+.contact-h3-cta {
+  font-family: poppins;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.contact-info {
+  width: 550px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.email,
+.insta {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.email p {
+  color: gray;
+}
+
+.insta a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  background-color: var(--backgroun-color-footer);
+  color: white;
+  height: 100px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+footer img {
+  margin-left: 20px;
+  filter: invert(98%) sepia(69%) saturate(2%) hue-rotate(243deg)
+    brightness(113%) contrast(100%);
+}
+
+footer img:hover {
+  transform: scale(1.3);
+  transition: ease-in-out 0.1s;
+}
